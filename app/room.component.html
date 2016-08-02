@@ -1,0 +1,22 @@
+<figure class="snip1504 hover text-xs-center" [style.background-color]="isMeeting ? '#e74c3c' : '#2ecc71'    ">
+    <img src={{image}} alt="sample59" />
+    <figcaption>
+        <div>
+            <h3>{{room}}</h3></div>
+
+        <div *ngIf="!isMeeting">
+            Available now
+            <br> Next Meeting Starts
+            <div> {{remainingTime }}</div>
+
+        </div>
+        <div *ngIf="isMeeting">
+
+            Remaining Time 
+            <br>
+            {{remainingTime | uppercase}}
+        </div>
+        <div></div>
+    </figcaption>
+    <a href="#"></a>
+</figure>
